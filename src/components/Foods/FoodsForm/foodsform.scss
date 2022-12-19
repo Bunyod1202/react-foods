@@ -1,0 +1,29 @@
+.foodsform-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 68px;
+}
+.foodsform-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.foodsform-select {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px 15px 44px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+  background: #1f1d2b;
+  border: 1px solid #393c49;
+  border-radius: 8px;
+  background-image: url("../../../assets/images/arrowdown.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + -30px);
+  background-size: 20px;
+  appearance: none;
+}
