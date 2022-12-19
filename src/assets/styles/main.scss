@@ -1,0 +1,52 @@
+/* barlow-regular - latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'), 
+       url('../fonts/barlow-v12-latin-regular.woff') format('woff'); 
+}
+/* barlow-500 - latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/barlow-v12-latin-500.woff2') format('woff2'),
+       url('../fonts/barlow-v12-latin-500.woff') format('woff');
+}
+/* barlow-600 - latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/barlow-v12-latin-600.woff2') format('woff2'), 
+       url('../fonts/barlow-v12-latin-600.woff') format('woff'); 
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Barlow', "Arial",sans-serif;
+  font-weight: 400;
+  background-color: #252836;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+}
+img {
+   display: block;
+}
+ul, ol {
+  list-style: none;
+}
+.App {
+  max-width: 1536px;
+  display: flex;
+  margin: 0 auto;
+
+}
