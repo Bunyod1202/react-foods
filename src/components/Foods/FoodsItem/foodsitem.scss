@@ -1,0 +1,57 @@
+.foods-item {
+  position: relative;
+  width: 192px;
+  margin-bottom: 58px;
+  padding: 114px 24px 24px 24px;
+  text-align: center;
+  background: #1f1d2b;
+  border-radius: 16px;
+}
+.foods-img{
+    position: absolute;
+    top: -36px;
+}
+.foods-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+}
+.foods-price {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+.foods-bowls {
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #abbbc2;
+}
+.foods-img {
+  border-radius: 50%;
+}
+.foods-img {
+  animation: 5s linear 0s normal none infinite running rot;
+  -webkit-animation: 5s linear 0s normal none infinite running rot;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
