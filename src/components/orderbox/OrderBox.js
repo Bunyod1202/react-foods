@@ -17,7 +17,18 @@ export const OrderBox = () => {
           <p className='price-text'>Qty</p>
           <p className='price-text'>Price</p>
         </div>
-        <OrderList/>
+        <OrderList />
+        <div className="sub-total-group">
+          <div className="sub-total-discount">
+            <p className='sub-text'>Discount</p>
+            <p className='sub-sum'>$0</p>
+          </div>
+          <div className="sub-total-subtotal">
+          <p className='sub-text'>Sub total</p>
+            <p className='sub-sum'> $ 21,03</p>
+          </div>
+          <Button className="btn-payment">Continue to Payment</Button>
+        </div>
       </div>
     </div>
   );
