@@ -1,12 +1,18 @@
+.nav-list-item {
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
 .nav-item{
-  margin-left: auto;
   width: 92px;
-height: 80px;
+  height: 80px;
+  margin-left: auto;
 display: flex;
 align-items: center;
 justify-content: center;
 position: relative;
 background-color: transparent;  
+
 }
 .item-active{
   background-color: #252836;
