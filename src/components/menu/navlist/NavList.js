@@ -7,7 +7,7 @@ export const NavList = () => {
     {
       id: 1,
       icon: <HomeIcon />,
-      link:"/"
+      link:"/home"
     },
     {
       id: 2,
