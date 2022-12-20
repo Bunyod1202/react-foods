@@ -1,0 +1,37 @@
+.reportitem {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.reportitem-box {
+  display: flex;
+  align-items: center;
+  width: 138px;
+  margin-right: 74px;
+}
+.reportitem-img {
+  margin-right: 16px;
+}
+.reportitem-name,
+.reportitem-menu,
+.reportitem-price {
+  font-size: 14px;
+  line-height: 140%;
+  color: #e0e6e9;
+}
+.reportitem-menu {
+  width: 137px;
+  margin-right: 32px;
+}
+.reportitem-price {
+  margin-right: 121px;
+}
+.reportitem-status {
+    padding: 4px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #50d1aa;
+  background-color: rgba(107, 226, 190, 0.24);
+  border-radius: 30px;
+}
