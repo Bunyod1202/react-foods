@@ -3,13 +3,19 @@ import FoodsForm from "./FoodsForm/FoodsForm"
 import "./foods.scss"
 import { FoodsHeader } from "./FoodsHeader/FoodsHeader"
 import { Outlet } from "react-router-dom"
+import Total from "../Total/Total"
+import Report from "../Total/Report/Report"
 
 function Foods() {
   return (
     <>
       <div className="foods-wrap">
-        <FoodsHeader/>
+        <FoodsHeader />
         <FoodsForm />
+        <Total>
+
+        <Report />
+        </Total>
         <Outlet />
       </div>
     </>
