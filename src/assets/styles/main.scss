@@ -44,10 +44,13 @@ ul, ol {
   list-style: none;
 }
 .App {
-  max-width: 1536px;
+  max-width: 1200px;
   height: 100vh;
   display: flex;
   margin: 0 auto;
   background-color: #252836;
 
+}
+.home{
+  display: flex;
 }

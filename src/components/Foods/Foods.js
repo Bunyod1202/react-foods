@@ -1,16 +1,16 @@
 import React from "react"
-import FoodsItem from "./FoodsItem/FoodsItem"
 import FoodsForm from "./FoodsForm/FoodsForm"
 import "./foods.scss"
+import { FoodsHeader } from "./FoodsHeader/FoodsHeader"
+import { Outlet } from "react-router-dom"
 
 function Foods() {
   return (
     <>
       <div className="foods-wrap">
+        <FoodsHeader/>
         <FoodsForm />
-        <ul className="foods-list">
-          <FoodsItem />
-        </ul>
+        <Outlet />
       </div>
     </>
   )

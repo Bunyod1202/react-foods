@@ -1,7 +1,7 @@
 import FoodsImg from "../../../assets/images/foods1.png"
 import "./foodsitem.scss"
 
-function FoodsItem() {
+export function FoodsItem() {
   const foodsItem = [
     {
       img: FoodsImg,
@@ -30,4 +30,4 @@ function FoodsItem() {
     </>
   )
 }
-export default FoodsItem
+

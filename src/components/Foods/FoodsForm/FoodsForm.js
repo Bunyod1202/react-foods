@@ -1,3 +1,4 @@
+import { Select } from "../../ui/select/Select";
 import "./foodsform.scss"
 
 function FoodsForm(){
@@ -5,13 +6,13 @@ function FoodsForm(){
         <div className="foodsform-box">
             <h2 className="foodsform-title">Choose Disshes</h2>
             <form >
-                <select className="foodsform-select">
+                <Select className="foodsform-select">
                     <option >Dine in</option>
                     <option >Dine in</option>
                     <option >Dine in</option>
                     <option >Dine in</option>
                     <option >Dine in</option>
-                </select>
+                </Select>
             </form>
         </div>
     )
