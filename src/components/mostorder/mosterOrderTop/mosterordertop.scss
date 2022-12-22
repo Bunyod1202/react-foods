@@ -1,0 +1,33 @@
+.most-top {
+  width: 372px;
+  height: 429px;
+  background-color: #1f1d2b;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.most-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom:1px solid #393C49;
+}
+.most-header-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.btn-view{
+  width: 100%;
+
+  padding: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #EA7C69;
+  border: 1px solid #EA7C69;
+border-radius: 8px;
+background-color: transparent;
+}
