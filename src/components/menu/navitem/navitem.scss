@@ -1,0 +1,56 @@
+.nav-list-item {
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+.nav-item{
+  width: 92px;
+  height: 80px;
+  margin-left: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+background-color: transparent;  
+
+}
+.item-active{
+  background-color: #252836;
+  border-radius: 12px 0px 0px 12px;
+  &::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url("../../../assets/images/Rectangle\ 24.png");
+    position: absolute;
+    right: 0;
+    top: -12px;
+  }
+  &::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url("../../../assets/images/Rectangle\ 25.png");
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+  }
+  .nav-box{
+    background-color: #EA7C69;
+    box-shadow: 0px 8px 24px #ea7c6952;
+    svg path {
+      fill: #fff;
+    }
+  }
+}
+.nav-box{
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-color:transparent;
+box-shadow: 0px 8px 24px transparent;
+border-radius: 8px;
+
+}

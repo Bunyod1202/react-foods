@@ -30,8 +30,7 @@
 body {
   font-family: 'Barlow', "Arial",sans-serif;
   font-weight: 400;
-  background-color: #252836;
-  overflow: hidden;
+  // overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -39,14 +38,21 @@ a {
   display: inline-block;
 }
 img {
-   display: block;
+  display: block;
 }
 ul, ol {
   list-style: none;
 }
 .App {
-  max-width: 1536px;
+  // max-width: 1200px;
+  // height: 100vh;
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+  background-color: #252836;
 
+}
+.home{
+  display: flex;
+  width:100%;
 }
