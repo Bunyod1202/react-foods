@@ -3,7 +3,7 @@ import { BascetIcon } from '../../../assets/icons/Icons';
 import food from '../../../assets/images/foods1.png'
 import { Button } from '../../ui/button/Button';
 import { Input } from '../../ui/input/Input';
-// import "./orderitem.scss"
+import "./orderitem.scss"
 export const OrderItem = () => {
   return (
     <li className='order-item'>
@@ -16,7 +16,7 @@ export const OrderItem = () => {
           </div>
         </div>
         <div className="food-content-right">
-          <Input className="cauter-input" value="2" />
+          <Input className="cauter-input" defaultValue="2" />
           <p className='cunter-sum'>$ 4,58</p>
         </div>
       </div>
