@@ -3,7 +3,7 @@ import { BascetIcon } from '../../../assets/icons/Icons';
 import food from '../../../assets/images/foods1.png'
 import { Button } from '../../ui/button/Button';
 import { Input } from '../../ui/input/Input';
-import "./orderitem.scss"
+// import "./orderitem.scss"
 export const OrderItem = () => {
   return (
     <li className='order-item'>
@@ -11,7 +11,7 @@ export const OrderItem = () => {
         <div className="food-content-left">
           <img className='food-img' src={food} alt="food"/>
           <div className="content-box">
-            <p className='content-title'>Spicy seasoned sea...</p>
+            <p className='content-titles'>Spicy seasoned sea...</p>
             <p className='content-text'>$ 2.29</p>
           </div>
         </div>
