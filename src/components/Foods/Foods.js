@@ -3,6 +3,7 @@ import FoodsForm from "./FoodsForm/FoodsForm"
 import "./foods.scss"
 import { FoodsHeader } from "./FoodsHeader/FoodsHeader"
 import { Outlet } from "react-router-dom"
+import { ModalPayment } from "../modalPayment/ModalPayment"
 
 
 function Foods() {
@@ -12,6 +13,7 @@ function Foods() {
         <FoodsHeader />
         <FoodsForm />
         <Outlet />
+        <ModalPayment/>
       </div>
     </>
   )

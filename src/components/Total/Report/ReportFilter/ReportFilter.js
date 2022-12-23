@@ -1,5 +1,6 @@
 import "./reportfilter.scss"
-import { Button } from "../../../ui/button/Button"
+
+import { Select } from "../../../ui/select/Select"
 
 function ReportFilter() {
   return (
@@ -7,13 +8,17 @@ function ReportFilter() {
       <div className="reportfilter-wrap">
         <div className="reportfilter-box">
           <h3 className="reportfilter-title">Order Report</h3>
-          <Button className="reportfilter-btn">Filter</Button>
+          <Select className="reportfilter-btn">
+            <option value="">Filter</option>
+            <option value="">wefsed</option>
+            <option value="">fwefwef</option>
+          </Select>
         </div>
         <div className="reportfilter-title-box">
-          <h3 className="reportfilter-menu-title">Customer</h3>
-          <h3 className="reportfilter-menu-title">Menu</h3>
-          <h3 className="reportfilter-menu-title">Total Payment</h3>
-          <h3 className="reportfilter-menu-title">Status</h3>
+          <p className="reportfilter-menu-title">Customer</p>
+          <p className="reportfilter-menu-title">Menu</p>
+          <p className="reportfilter-menu-title">Total Payment</p>
+          <p className="reportfilter-menu-title">Status</p>
         </div>
       </div>
     </>

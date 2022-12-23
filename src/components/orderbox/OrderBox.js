@@ -1,8 +1,11 @@
+import { useContext } from 'react';
+import { ModalContext } from '../../context/ModalContext';
 import { Button } from '../ui/button/Button';
 import  './orderbox.scss';
 import { OrderList } from './orderlist/OrderList';
 
 export const OrderBox = () => {
+  const {modalPayments,setModalPayment} = useContext(ModalContext)
   return (
     <div className='order'>
       <div className="order-header">
@@ -27,7 +30,7 @@ export const OrderBox = () => {
           <p className='sub-text'>Sub total</p>
             <p className='sub-sum'> $ 21,03</p>
           </div>
-          <Button className="btn-payment">Continue to Payment</Button>
+          <Button className="btn-payment" onClick={()=>setModalPayment(!modalPayments)}>Continue to Payment</Button>
         </div>
       </div>
     </div>
