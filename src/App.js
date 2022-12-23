@@ -1,10 +1,17 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import { Menu } from "./components/menu/Menu";
 import { Home } from "./pages/Home";
 import "./assets/styles/main.scss"
 import { FoodsList } from "./components/Foods/FoodsList/FoodsList";
+import { Piece } from "./pages/Piece";
+import { useEffect } from "react";
 
 function App() {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    navigate("/home")
+  },[])
   return (
     <div className="App">
       <Menu/>
@@ -17,6 +24,7 @@ function App() {
           <Route path="appetizer" element={<p>appetizer</p>} />
           <Route path="dessert" element={<p>dessert</p>} />
         </Route>
+        <Route path="/piece" element={<Piece/>} />
       </Routes>
 
     </div>

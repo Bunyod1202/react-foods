@@ -14,8 +14,8 @@ function ReportItem() {
   let customerArray = Array(12).fill(...customer)
   return (
     <>
-      {customerArray.map((element) => (
-        <li className="reportitem">
+      {customerArray.map((element , index) => (
+        <li className="reportitem" key={index}>
           <div className="reportitem-box">
             <img
               className="reportitem-img"

@@ -8,7 +8,7 @@ export const OrderList = () => {
   return (
     <ul className='order-list'>
       {
-        foodsItem1.map(item  => <OrderItem/>)
+        foodsItem1.map((item,index)  => <OrderItem key={index}/>)
       }
     </ul>
   );
