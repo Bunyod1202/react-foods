@@ -1,0 +1,42 @@
+.setting-add-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 695px;
+  height: 600px;
+  margin: 0px auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.setting-add-item {
+  position: relative;
+  width: 221px;
+  margin-bottom: 16px;
+  background: #1f1d2b;
+  border: 1px dashed #ea7c69;
+  border-radius: 8px;
+}
+.setting-add-btn {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ea7c69;
+  background-color: transparent;
+  border: none;
+}
+.setting-add-btn::before {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  width: 15px;
+  height: 15px;
+  background-image: url('../../../assets/images/plus.svg');
+  background-size: contain;
+  content: '';
+}
