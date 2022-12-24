@@ -88,8 +88,8 @@ export const ModalPayment = () => {
               <label>
                 <span className='input-title'>Order Type</span>
                 <Select className="foodsform-select selects" onChange={(e) => setInputOrderType(e.target.value)} required>
-                  <option >Dine In</option>
-                  <option >Dine in</option>
+                  <option >Product category </option>
+                  <option >Product category </option>
                   <option >Dine in</option>
                   <option >Dine in</option>
                   <option >Dine in</option>
