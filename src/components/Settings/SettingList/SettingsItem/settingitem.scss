@@ -1,0 +1,38 @@
+.setting-item {
+  position: relative;
+}
+.setting-link {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px 27px;
+}
+.setting-link-active {
+  background: rgba(234, 124, 105, 0.26);
+}
+.setting-link-active .setting-box::after {
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  width: 4px;
+  height: 39px;
+  border: 1px solid #ea7c69;
+  background-color: #ea7c69;
+  border-radius: 29px;
+  content: '';
+}
+.setting-icon {
+  margin-right: 9px;
+  color: #fff;
+}
+.setting-title {
+  margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.setting-text {
+  font-size: 12px;
+  line-height: 140%;
+  color: #abbbc2;
+}

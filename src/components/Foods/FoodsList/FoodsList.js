@@ -10,7 +10,7 @@ export const FoodsList = () => {
       span: "20 Bowls available",
     },
   ]
-  let foodsItem1 = Array(12).fill(...foodsItem)
+  let foodsItem1 = Array(11).fill(...foodsItem)
   return (
     <ul className="foods-list">
       {foodsItem1.map((element, index) => (

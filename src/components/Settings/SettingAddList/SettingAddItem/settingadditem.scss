@@ -1,0 +1,71 @@
+.setting-add-items {
+    position: relative;
+  width: 221px;
+  margin-bottom: 16px;
+  padding: 22px 38px 52px 38px;
+  background: #1f1d2b;
+  border: 1px solid #393c49;
+  border-radius: 8px;
+}
+.setting-add-img {
+  margin: 0 auto 14px auto;
+  border-radius: 50%;
+}
+.setting-add-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+}
+.setting-add-price-box {
+  display: flex;
+  justify-content: space-between;
+  width: 106px;
+  margin: 0 auto 16px auto;
+}
+.setting-add-price {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #abbbc2;
+}
+.setting-add-price::after {
+  width: 4px;
+  height: 4px;
+  margin: 0px 5px;
+  background: #c4c4c4;
+  border-radius: 50%;
+  content: '';
+}
+.setting-add-bowls {
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #abbbc2;
+}
+.setting-add-edit {
+    position: absolute;
+    left: 0px;
+    padding: 16px 69px 16px 86px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #ea7c69;
+  background-color: #ea7c693d;
+  border-radius: 0px 0px 8px 8px;
+}
+.setting-add-edit::before{
+    position: absolute;
+    top: 15px;
+    left: 62px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../../assets/images/Edit.svg");
+    background-size: contain;
+    position: absolute;
+    content: "";
+}
