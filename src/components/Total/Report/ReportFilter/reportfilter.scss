@@ -17,8 +17,9 @@
 }
 .reportfilter-btn {
   display: flex;
+  appearance: none;
   align-items: center;
-  padding: 14px 14px 14px 14px;
+  padding: 14px 14px 14px 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 130%;
@@ -26,15 +27,11 @@
   background: #1f1d2b;
   border: 1px solid #393c49;
   border-radius: 8px;
-}
-.reportfilter-btn::before {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
   background-image: url("../../../../assets/images/filter-order.svg");
-  background-size: contain;
-  content: "";
+  background-repeat: no-repeat;
+  background-position: 14px;
 }
+
 .reportfilter-title-box {
   display: flex;
   justify-content: space-between;

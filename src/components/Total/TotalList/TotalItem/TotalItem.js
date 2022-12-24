@@ -13,7 +13,7 @@ function TotalItem({svg,percent,text,title}) {
             <span className="total-percent">{percent}</span>
           </div>
           <p className="total-text">{text}</p>
-          <h3 className="total-title">{title}</h3>
+          <p className="total-title">{title}</p>
         </li>
    
     </>
