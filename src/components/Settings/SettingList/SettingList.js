@@ -30,7 +30,7 @@ export const SettingList = () => {
       img: <Management />,
       title: 'Products Management',
       text: 'Manage your product, pricing, etc',
-      link: '',
+      link: 'settingaddlist',
     },
     {
       id: 4,

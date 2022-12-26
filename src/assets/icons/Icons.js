@@ -284,6 +284,9 @@ export const About = () => {
         fill="currentColor"
       />
     </svg>
+
+  )
+}
 export const Paypal = () => {
   return (
     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -315,7 +318,7 @@ export const CreditCard = () => {
 export const Closebtn = () => {
   return (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1.69783 1.6967L7.00113 7M12.3044 12.3033L7.00113 7M7.00113 7L12.3044 1.6967M7.00113 7L1.69783 12.3033" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1.69783 1.6967L7.00113 7M12.3044 12.3033L7.00113 7M7.00113 7L12.3044 1.6967M7.00113 7L1.69783 12.3033" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
     
     

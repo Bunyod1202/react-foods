@@ -2,11 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 695px;
   height: 600px;
-  margin: 0px auto;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding: 29px 24px 24px 24px;
 }
 .setting-add-item {
   position: relative;
@@ -34,6 +33,7 @@
   position: absolute;
   left: 50%;
   top: 35%;
+  transform: translateX(-50%);
   width: 15px;
   height: 15px;
   background-image: url('../../../assets/images/plus.svg');

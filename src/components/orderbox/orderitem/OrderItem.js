@@ -7,7 +7,6 @@ import "./orderitem.scss"
 export const OrderItem = ({ num, som,foodsItem1,setResult }) => {
   const [cauterInput, setCauterInput] = useState(som)
   const ress = foodsItem1.reduce((ac, item) => {
-    console.log(item);
     return ac += item.som
   }, 0)
   useEffect(() => {

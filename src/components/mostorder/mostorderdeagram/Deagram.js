@@ -6,10 +6,11 @@ class ApexChart extends React.Component {
 
     this.state = {
     
-      series: [44, 55, 67],
+      series: [44, 55, 67,0],
       options: {
         chart: {
-          height: 176,
+          width: '100%',
+          height: 10,
           type: 'radialBar',
         },
         plotOptions: {
@@ -21,17 +22,22 @@ class ApexChart extends React.Component {
               value: {
                 fontSize: '16px',
               },
-              total: {
-                show: true,
-                label: 'Total',
-                formatter: function (w) {
-                  return 249
-                }
-              }
+             
             }
           }
         },
-        labels: ['Apples', 'Oranges', 'Bananas', 'Berries'],
+        labels: ['Apples', 'Oranges', 'Bananas', ''],
+        responsive: [{
+          breakpoint: 180,
+          options: {
+            chart: {
+              width: 10
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
       },
     
     
