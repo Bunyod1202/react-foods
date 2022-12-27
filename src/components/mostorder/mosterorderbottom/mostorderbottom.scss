@@ -4,3 +4,49 @@
   background: #1F1D2B;
 border-radius: 8px;
 }
+g[rel="4"] {
+  path[d="M 163 76.33658536585365 A 86.66341463414635 86.66341463414635 0 0 1 163 76.33658536585365"] {
+    display: none !important;
+}
+}
+
+.apexcharts-datalabels-group{
+  opacity: 1!important;
+}
+.SvgjsG1025{
+  margin-left: 100px;
+}
+#apexcharts-radialbarTrack-3 {
+  stroke:#2A2836;
+}
+#apexcharts-radialbarTrack-2 {
+  stroke:#353440;
+}
+#apexcharts-radialbarTrack-1 {
+  stroke:#2A2836;
+}
+#apexcharts-radialbarTrack-0 {
+  stroke:#353440;
+}
+.SvgjsCircle1255{
+  margin-left: 100px;
+}
+:root{
+  --main-body-color:#fff;
+}
+.dark{
+  --main-body-color:#000;
+
+}
+// .apexcharts-radialbar-hollow{
+//   r: 10;
+//   cx: 200;
+//   cy: 200;
+//   fill: transparent;
+// }
+.apexcharts-datalabels-group{
+  transform: translate( 100px 100px )!important;
+}
+.apexcharts-datalabel-value {
+ fill: #fff !important;
+}
