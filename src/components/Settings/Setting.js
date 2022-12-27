@@ -67,7 +67,7 @@ export const Setting = () => {
             </span>
            </label>
             <div className="modal-btn-group">
-              <Button className='btn-view' onClick={()=>setModalAdd(!modalAdd)} type='button'>Delete</Button>
+              <Button className='btn-view' type='button'>Delete</Button>
               <span className='boxs'></span>
               <Button className='btn-payment m'  type='submit'>Edit  </Button>
             </div>
