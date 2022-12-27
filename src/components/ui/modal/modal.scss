@@ -2,12 +2,14 @@
   position: absolute;
   top:0;
   left: 0;
+  // bottom: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .modal-card{ 
   width: 514px;
@@ -30,6 +32,7 @@ font-weight: 600;
 font-size: 28px;
 line-height: 140%;
 color: #FFFFFF;
+margin-bottom: 32px;
 }
 .modal-selects {
   width: 100%;

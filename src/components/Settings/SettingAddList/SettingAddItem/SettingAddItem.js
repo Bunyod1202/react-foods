@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ModalContextEdit } from '../../../../context/ModalContext'
+import { Button } from '../../../ui/button/Button'
 import './settingadditem.scss'
 
 const SettingAddItem = ({ img, title, price, span }) => {
+  const {modalEdit ,setModalEdit} = useContext(ModalContextEdit)
   return (
     <li className="setting-add-items">
       <img
@@ -16,7 +19,7 @@ const SettingAddItem = ({ img, title, price, span }) => {
         <p className="setting-add-price">{price}</p>
         <span className="setting-add-bowls">{span}</span>
       </div>
-      <button className='setting-add-edit'>Edit dish</button>
+      <Button className='setting-add-edit' onClick={()=>setModalEdit(!modalEdit)} >Edit dish</Button>
     </li>
   )
 }

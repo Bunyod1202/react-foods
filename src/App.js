@@ -7,11 +7,19 @@ import { Piece } from './pages/Piece'
 import { Settings } from './pages/Settings'
 import SettingAddList from './components/Settings/SettingAddList/SettingAddList'
 import {Setting} from './components/Settings/Setting'
+import { ModalContextAdd } from './context/ModalContext'
+import { useContext } from 'react'
 
 function App() {
-
+  const { modalAdd } = useContext(ModalContextAdd)
+  if (modalAdd === true) {
+    document.querySelector("body").classList.add("app-scroll")
+  } else {
+    document.querySelector("body").classList.remove("app-scroll")
+    
+  }
   return (
-    <div className="App">
+    <div className="App ">
       <Menu />
       <Routes>
         <Route path='/' element={<Navigate to="home" replace={true} />} />
@@ -23,8 +31,8 @@ function App() {
           <Route path="appetizer" element={<p>appetizer</p>} />
           <Route path="dessert" element={<p>dessert</p>} />
         </Route>
-        <Route path="/settings/*" element={<Settings />}>
           <Route path='settings/*' element={<Navigate to="settingaddlist" replace={true} />} />
+        <Route path="/settings/*" element={<Settings />}>
           <Route path='settings'  element={<p>Settiaaaaaaaaaaaaaaaaaaaaaaaangs</p>} />
           <Route path="restaurant" element={<p>Restaurant</p>} />
           <Route path='settingaddlist/*' element={<Setting />  } >
