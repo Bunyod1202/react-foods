@@ -9,7 +9,7 @@ export const SettingItem = ({ img, title, text, link }) => {
         className={({ isActive }) =>
           isActive ? 'setting-link setting-link-active' : 'setting-link'
         }
-        end
+        
         to={link}
       >
         {img}

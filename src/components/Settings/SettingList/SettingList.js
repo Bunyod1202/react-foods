@@ -16,7 +16,7 @@ export const SettingList = () => {
       img: <Appereance />,
       title: 'Appereance',
       text: 'Dark and Light mode, Font size',
-      link: 'settings',
+      link: 'apperence',
     },
     {
       id: 2,
@@ -54,6 +54,7 @@ export const SettingList = () => {
       link: 'about',
     },
   ]
+
   return (
     <>
       <ul className="setting-list">

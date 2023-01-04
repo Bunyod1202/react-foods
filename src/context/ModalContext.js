@@ -3,6 +3,7 @@ import {  createContext, useState } from "react";
 export const ModalContext = createContext();
 export const ModalContextAdd = createContext();
 export const ModalContextEdit = createContext();
+export const PutContextEdit = createContext();
 
 
 export const UserProvider = ({children}) => {
@@ -28,6 +29,7 @@ export const ModalProvider = ({children}) => {
     >{children}</ModalContextAdd.Provider>
   );  
 }
+
 export const ModalEditProvider = ({ children }) => {
   const [modalEdit, setModalEdit] = useState(false);
 
@@ -38,5 +40,18 @@ export const ModalEditProvider = ({ children }) => {
         setModalEdit,
       }}
     >{children}</ModalContextEdit.Provider>
+  );  
+}
+
+export const PutIdEditProvider = ({ children }) => {
+  const [putEdit, setPutEdit] = useState(0);
+
+  return (
+    <PutContextEdit.Provider
+      value={{
+        putEdit,
+        setPutEdit,
+      }}
+    >{children}</PutContextEdit.Provider>
   );  
 }

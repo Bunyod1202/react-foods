@@ -11,7 +11,7 @@ export const OrderItem = ({ num, som,foodsItem1,setResult }) => {
   }, 0)
   useEffect(() => {
     setResult(ress.toFixed(2))
-  }, [ress])
+  }, [setResult,ress])
   
   const caunts = (e) => {
     if (e.key === "Enter") {

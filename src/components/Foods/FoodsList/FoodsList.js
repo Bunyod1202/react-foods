@@ -1,27 +1,33 @@
 import { FoodsItem } from "../FoodsItem/FoodsItem"
-import FoodsImg from "../../../assets/images/foods1.png"
 import "./foodslist.scss"
-export const FoodsList = () => {
-  const foodsItem = [
-    {
-      img: FoodsImg,
-      title: "Spicy seasoned seafood noodles",
-      price: "$ 2.29",
-      span: "20 Bowls available",
-    },
-  ]
-  let foodsItem1 = Array(11).fill(...foodsItem)
+import { useEffect, useState } from "react"
+import axios from "axios"
+export const FoodsList = ({id}) => {
+  const [data,setData] = useState([])
+  useEffect(() => {
+  const postproduct = async () => {
+
+    const data = await axios.get(`http://localhost:5000/food/${id}`)
+    setData(data.data)
+;
+  }
+    postproduct()
+  }, [id])
   return (
-    <ul className="foods-list">
-      {foodsItem1.map((element, index) => (
+    <>
+    {data.length > 0 ? <ul className="foods-list">
+        {data.map((element, index) => (
         <FoodsItem
-          key={index}
-          img={element.img}
-          title={element.title}
+            key={index}
+            id={element.id}
+            categoryId={id}
+          img={element.image}
+          title={element.name}
           price={element.price}
-          span={element.span}
+          span={element.bowls}
         />
       ))}
-    </ul>
+    </ul> : <p className="no-product">The product is currently unavailable</p>}
+    </>
   )
 }

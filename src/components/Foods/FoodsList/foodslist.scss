@@ -27,7 +27,14 @@
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+.no-product {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 20px;
+  color:#f1f1f1;
+  text-align: center;
 
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

@@ -1,8 +1,22 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Select } from '../../ui/select/Select';
 import './foodsheader.scss';
 
 export const SettingsHeader = () => {
+  const [data, setData] = useState([])
+  
+  useEffect(() => {
+  const postproduct = async () => {
+    const data = await axios.get("http://localhost:5000/category")
+    const dataFilter = data.data.filter(item => item.id !== 1)
+    setData(dataFilter);
+  }
+  postproduct()
+
+  },[])
+
   return (
     <div>
       <div className="header-top">
@@ -20,6 +34,7 @@ export const SettingsHeader = () => {
       </div>
       <div className="header-bottom">
         <ul className='filter-list'>
+       
           <li className='filter-item'>
             <NavLink end className={({ isActive }) =>
               isActive ? "filter-link  filter-link-active" : "filter-link"

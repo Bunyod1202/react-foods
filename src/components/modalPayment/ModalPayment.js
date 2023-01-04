@@ -19,8 +19,6 @@ export const ModalPayment = () => {
 
   const btn = (e) => {
     e.preventDefault();
-
-    console.log(inputName, inputCardNumber, inputExpirationDater, inputCVV, inputOrderType, inputTableno,inputCardRadio);
   }
   return (
     <div className={modalPayments === false ? " modal-payment " : 'modal-payment show'}>

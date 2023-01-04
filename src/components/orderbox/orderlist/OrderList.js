@@ -7,7 +7,7 @@ export const OrderList = ({setResult}) => {
     som: 2.29,
   }
   let foodsItem1 = Array(6).fill(obj)
-  // console.log(obj);
+
  
   return (
     <ul className='order-list'>
