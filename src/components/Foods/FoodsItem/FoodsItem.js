@@ -9,7 +9,7 @@ console.log(rest);
 
   const addOrder = () => {
     const postproduct = async () => {
-      const data = await axios.get(`http://localhost:5000/food/${categoryId}`)
+      const data = await axios.get(`http://172.17.13.155:5000/food/${categoryId}`)
       const filterData = data.data.filter(data => data.id === id)
       setRest([...rest,filterData])
       // console.log(...filterData)
@@ -24,7 +24,7 @@ console.log(rest);
       <li className="foods-item" onClick={addOrder} key={title}>
         <img
           className="foods-img"
-          src={`http://localhost:5000/${img}`}
+          src={`http://172.17.13.155:5000/${img}`}
           width="150"
           height="150"
           alt={title}

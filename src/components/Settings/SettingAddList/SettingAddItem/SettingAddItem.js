@@ -14,7 +14,7 @@ const SettingAddItem = ({ img, title, price, span, id}) => {
     <li className="setting-add-items">
       <img
         className="setting-add-img"
-        src={`http://localhost:5000/${img}`}
+        src={`http://172.17.13.155:5000/${img}`}
         width="150"
         height="150"
         alt={title}

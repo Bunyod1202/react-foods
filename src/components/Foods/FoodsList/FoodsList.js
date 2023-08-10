@@ -7,7 +7,7 @@ export const FoodsList = ({id}) => {
   useEffect(() => {
   const postproduct = async () => {
 
-    const data = await axios.get(`http://localhost:5000/food/${id}`)
+    const data = await axios.get(`http://172.17.13.155:5000/food/${id}`)
     setData(data.data)
 ;
   }
