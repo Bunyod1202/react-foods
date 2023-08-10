@@ -18,10 +18,10 @@ export const Setting = () => {
   const { modalAdd,setModalAdd } = useContext(ModalContextAdd)
   const { modalEdit,setModalEdit } = useContext(ModalContextEdit)
   const {putEdit} = useContext(PutContextEdit)
-  // axios.get("http://172.17.13.155:5000/category").then((response) => console.log(response))
+  // axios.get("http://localhost:5000/category").then((response) => console.log(response))
 
   const btnDel = async () => {
-    const delId = await axios.delete(`http://172.17.13.155:5000/food/${putEdit}`)
+    const delId = await axios.delete(`http://localhost:5000/food/${putEdit}`)
     console.log(delId);
     setModalEdit(false)
 
@@ -42,7 +42,7 @@ export const Setting = () => {
     formData.append("category_id", Number(values.categore))
     formData.append("food_img", values.file)
     const postproduct = async () => {
-      const data = await axios.post("http://172.17.13.155:5000/food", formData)
+      const data = await axios.post("http://localhost:5000/food", formData)
       console.log(data);
     }
     postproduct()
@@ -72,7 +72,7 @@ export const Setting = () => {
     formData.append("food_img", values.file)
    
     const postproduct = async () => {
-      const data = await axios.put(`http://172.17.13.155:5000/food/${putEdit}`, formData)
+      const data = await axios.put(`http://localhost:5000/food/${putEdit}`, formData)
   console.log(data);
     }
     postproduct()

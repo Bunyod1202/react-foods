@@ -9,7 +9,7 @@ export const SettingsHeader = () => {
   
   useEffect(() => {
   const postproduct = async () => {
-    const data = await axios.get("http://172.17.13.155:5000/category")
+    const data = await axios.get("http://localhost:5000/category")
     const dataFilter = data.data.filter(item => item.id !== 1)
     setData(dataFilter);
   }
